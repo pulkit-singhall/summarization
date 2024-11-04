@@ -1,0 +1,7 @@
+ipykernel
+numpy
+streamlit
+transformers
+python-dotenv
+torch
+tensorflow
