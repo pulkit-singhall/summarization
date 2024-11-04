@@ -9,8 +9,8 @@ import streamlit as st # type: ignore
 load_dotenv()
 
 # global variables
-model_name = os.getenv('MODEL_NAME')
-task = os.getenv('TASK')
+model_name = st.secrets['model_name']
+task = st.secrets['task']
 
 # torch cpu
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
